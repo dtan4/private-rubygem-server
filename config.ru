@@ -1,5 +1,6 @@
 require "rubygems"
 require "geminabox"
+require "thin"
 
 if ENV["BASIC_AUTH_USERNAME"] && ENV["BASIC_AUTH_PASSWORD"]
   use Rack::Auth::Basic do |username, password|
